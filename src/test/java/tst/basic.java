@@ -73,5 +73,10 @@ public class basic extends BasePage {
 		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}
+	
+	
+	
+	
+	
 
 }
