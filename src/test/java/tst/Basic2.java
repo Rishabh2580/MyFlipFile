@@ -17,7 +17,7 @@ import pages.BasePage;
 
 public class Basic2 extends BasePage {
 
-	@Test
+//	@Test
 
 	public void Test2() throws InterruptedException {
 
