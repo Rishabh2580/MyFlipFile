@@ -1,17 +1,17 @@
 pipeline {
     agent any
     tools {
-        // Replace 'MAVEN_HOME' with the name of the Maven tool configured in Jenkins
-        maven 'MAVEN_HOME'
+        // Replace 'Maven_3' with the correct name of the Maven tool configured in Jenkins
+        maven 'Maven_3'
     }
 
     stages {
         stage('Example') {
             steps {
                 // Use 'withMaven' block to automatically set up Maven for the build
-                withMaven(maven: 'Maven') {
+                withMaven(maven: 'Maven_3') {
                     // Run Maven commands within this block
-                    bat 'mvn clean test'
+                    sh 'mvn clean test'
                 }
             }
         }
