@@ -10,7 +10,7 @@ pipeline {
                 // Use 'withMaven' block to automatically set up Maven for the build
                 withMaven(maven: 'Maven 3') {
                     // Run Maven commands within this block
-                    sh 'mvn clean test'
+                    bat 'mvn clean test'
                 }
             }
         }
