@@ -15,13 +15,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            // Send email notification regardless of the build result
-            emailext body: "Build ${currentBuild.currentResult}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'\n\nCheck console output at: ${env.BUILD_URL}\n",
-                     subject: "Jenkins Build ${currentBuild.currentResult}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-                     to: "your-email@example.com" // Replace with your email address
-        }
-    }
 }
